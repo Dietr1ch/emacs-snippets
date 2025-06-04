@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: impl PartialOrd for Type { fn partial_cmp (...) }
+# key: partial_ord
+# --
+impl PartialOrd for ${1:Type} {
+    fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+        Some(self.${2:value}.cmp(&other.${2:value}))
+    }
+}

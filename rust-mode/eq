@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: impl Eq for Type { }
+# key: eq
+# --
+impl Eq for ${1:Type} {}

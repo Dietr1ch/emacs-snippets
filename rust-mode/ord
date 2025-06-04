@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: impl Ord for Type { fn cmp (...) }
+# key: ord
+# --
+impl Ord for ${1:Type} {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        self.${2:value}.cmp(&other.${2:value})
+    }
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: struct TypeName { .. }
+# key: derive_struct
+# --
+#[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord)]
+struct ${1:TypeName} {
+    $0
+}
