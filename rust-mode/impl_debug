@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: impl Debug for Type
+# key: impl_debug
+# --
+impl std::fmt::Debug for ${1:Type} {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "${1:Type}{...}")
+    }
+}

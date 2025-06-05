@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: impl Hash
+# key: impl_hash
+# --
+// https://doc.rust-lang.org/std/hash/trait.Hash.html
+impl Hash for ${1:Type} {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        self.${2:field1}.hash(state);
+        self.${3:field2}.hash(state);
+        $0
+    }
+}
