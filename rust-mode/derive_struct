@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: derive(...) struct TypeName { .. }
+# name: derive(..) struct TypeName { .. }
 # key: derive_struct
 # --
 #[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord)]
