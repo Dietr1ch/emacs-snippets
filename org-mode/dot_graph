@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: dot graph
+# key: dot_graph
+# --
+#+begin_src dot :file ${1:/tmp/graph.png} :exports results
+digraph {
+  a; b;
+
+  a->b[label="l"]
+  $0
+}
+#+end_src
