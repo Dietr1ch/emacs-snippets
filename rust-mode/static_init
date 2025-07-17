@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: static CONSTANT: LazyLock<Type> = LazyLock::new(..);
+# key: static_init
+# --
+static ${1:CONSTANT}: std::sync::LazyLock<${2:Type}> = std::sync::LazyLock::new(|| {
+	${3:value}
+});
