@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: let _profiler = dhat::Profiler::new_heap();
+# key: dhat_profiler
+# --
+#[cfg(feature = "dhat-heap")]
+let _profiler = dhat::Profiler::new_heap();

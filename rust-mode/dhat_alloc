@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: static ALLOC: dhat::Alloc = dhat::Alloc;
+# key: dhat_alloc
+# --
+#[cfg(feature = "dhat-heap")]
+#[global_allocator]
+static ALLOC: dhat::Alloc = dhat::Alloc;
