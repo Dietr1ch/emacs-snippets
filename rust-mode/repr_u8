@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #[repr(u8)]
+# key: repr_u8
+# --
+#[repr(u8)]

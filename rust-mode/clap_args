@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: struct Args {..}
+# key: clap_args
+# --
+/// Command line arguments
+use clap::Parser;
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+pub struct Args {
+	#[arg(long, env = "${2:LISTEN_ADDRESS}", default_value = "${3:127.0.0.1:3000}")]
+	${0:listen_address}: ${1:String},
+}
